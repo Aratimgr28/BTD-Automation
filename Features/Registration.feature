@@ -1,4 +1,5 @@
 Feature: Verifying registration functionality
+    @sanity @critical
     Scenario: registration with valid data
     Given user is on Registration Page
     When user enters firstname
@@ -13,7 +14,7 @@ Feature: Verifying registration functionality
     Then user should be registered successfully
 
 
-
+    @smoke @critical
     Scenario: registration with duplicate email
     Given user is on Registration Page
     When user enters firstname
